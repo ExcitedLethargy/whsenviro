@@ -8,7 +8,7 @@ console.log("Package imports complete.");
 
 //Module Imports
 console.log("Beginning JavaScript file imports...");
-import {firebaseInit} from './src/js/firebase/firebaseInit.js';
+import {firebaseInit} from './lib/firebase/firebaseInit.js';
 console.log("File imports complete.");
 
 //Init
