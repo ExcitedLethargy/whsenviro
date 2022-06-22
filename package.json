@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Necessary modules for the WHS Enviro Databasing HTML page and backend code.",
   "main": "index.js",
+  "type":"module",
   "directories": {
     "lib": "lib"
   },
