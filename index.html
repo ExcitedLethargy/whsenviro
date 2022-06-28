@@ -6,17 +6,22 @@
         <meta charset="UTF-8">
         <meta name="title" content="WHS Enviro Club">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./public/css/stylesheet.css">
         <title>Home - WHS Enviro Club Audit</title>
         <h1>WHS Enviro Databasing!</h1>
         <script src='./vendors/jquery/jquery-3.6.0.min.js'></script>
     </head>
     <body>
-        <div id="eSidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closeSidenavButton" onclick="">&times;</a>
-        </div>
         <script src='./index.js'></script>
-        <script type="text/javascript">
-            import {}
-        </script>
+        <script src='./lib/frontend/sidenavControls.js'></script>
+        <div id="eSidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closeSidenavButton" 
+            onclick='closeSidenav()'>&times;</a>
+            <a href="./public/html/about.html">About</a>
+            <a href="./public/html/auditInput.html">Input Data</a>
+            <a href="./public/html/powerBills.html">Power Bills</a>
+            <a href="./public/html/toDoItems.html">To Do Items</a>
+        </div>
+        <button onclick="openSidenav()"></button>
     </body>
 </html>
