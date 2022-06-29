@@ -15,13 +15,12 @@
         <script src='./index.js'></script>
         <script src='./lib/frontend/sidenavControls.js'></script>
         <div id="eSidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closeSidenavButton" 
-            onclick='closeSidenav()'>&times;</a>
             <a href="./public/html/about.html">About</a>
             <a href="./public/html/auditInput.html">Input Data</a>
             <a href="./public/html/powerBills.html">Power Bills</a>
             <a href="./public/html/toDoItems.html">To Do Items</a>
         </div>
-        <button onclick="openSidenav()"></button>
+        <div id="eSidenavOpener" class="sidenav__opener" onmouseenter="toggleSidenav()">
+        </div>
     </body>
 </html>
