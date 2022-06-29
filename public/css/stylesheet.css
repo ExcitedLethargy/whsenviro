@@ -39,3 +39,7 @@
     font-size: 36px;
     margin-left: 50px;
 }
+
+body {
+    transition: 0.5s;
+}
