@@ -1,6 +1,13 @@
 /*Default stylesheet for the WHSEnviro website.*/
 
 /*-------------------------------------------------------------------------------------------*/
+/*HOME PAGE STYLING*/
+/*Main header*/
+#eMainHeader {
+    text-align: center;
+}
+
+/*-------------------------------------------------------------------------------------------*/
 /*SIDENAV*/
 .sidenav {
     height: 100%;
@@ -15,6 +22,16 @@
     transition: 0.5s;
 }
 
+/*Sidenav header*/
+.sidenav h1 {
+    padding: 8px 8px 8px 8px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial;
+    color: #0a8919;
+    transition: 0.2s;
+}
+
 /*Sidenav links*/
 .sidenav a {
     padding: 8px 8px 8px 32px;
@@ -22,8 +39,9 @@
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.2s;
     font-family: Arial;
+    opacity: 0;
 }
 
 /*Hovering over sidenav links*/
@@ -35,8 +53,8 @@
 .sidenav__opener {
     position: absolute;
     top: 0px;
-    left: -10px;
-    width: 3%;
+    left: 0px;
+    width: 1%;
     height: 100%;
     background-color: #000;
     opacity: 0.5;
