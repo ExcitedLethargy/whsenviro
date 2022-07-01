@@ -1,0 +1,27 @@
+{
+  "name": "whsenviro",
+  "version": "1.0.0",
+  "description": "Necessary modules for the WHS Enviro Databasing HTML page and backend code.",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExcitedLethargy/whsenviro.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ExcitedLethargy/whsenviro/issues"
+  },
+  "homepage": "https://github.com/ExcitedLethargy/whsenviro#readme",
+  "dependencies": {
+    "firebase": "^9.8.3",
+    "pg": "^8.7.3"
+  }
+}
