@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Necessary modules for the WHS Enviro Databasing HTML page and backend code.",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "directories": {
     "lib": "lib"
   },
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ExcitedLethargy/whsenviro#readme",
   "dependencies": {
-    "firebase": "^9.8.3"
+    "firebase": "^9.8.3",
+    "pg": "^8.7.3"
   }
 }
