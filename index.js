@@ -9,8 +9,14 @@ console.log("Package imports complete.");
 //Module Imports
 console.log("Beginning JavaScript file imports...");
 import {firebaseInit} from './lib/firebase/firebaseInit.js';
+import {postgresInit} from './lib/postgres/postgresInit.js';
 console.log("File imports complete.");
 
 //Init
-console.log("Running init scripts.");
-firebaseInit();
+function initProgram() {
+    console.log("Running init scripts.");
+    firebaseInit();
+    postgresInit();
+}
+
+initProgram();
