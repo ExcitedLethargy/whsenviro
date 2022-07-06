@@ -20,6 +20,7 @@
   "homepage": "https://github.com/ExcitedLethargy/whsenviro#readme",
   "dependencies": {
     "firebase": "^9.8.4",
-    "node-postgres": "^0.6.2"
+    "node-postgres": "^0.6.2",
+    "pg": "^8.7.3"
   }
 }
