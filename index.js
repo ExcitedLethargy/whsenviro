@@ -19,4 +19,8 @@ function initProgram() {
     postgresInit();
 }
 
-initProgram();
+try {
+    initProgram();
+} catch(e) {
+    console.log("Error detected:" + e);
+};
