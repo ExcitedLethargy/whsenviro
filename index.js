@@ -10,6 +10,7 @@ console.log("Package imports complete.");
 console.log("Beginning JavaScript file imports...");
 import {firebaseInit} from './lib/firebase/firebaseInit.js';
 import {postgresInit} from './lib/postgres/postgresInit.js';
+import {getFirebaseData} from './lib/firebase/firebaseDataTransfer.js'
 console.log("File imports complete.");
 
 //Init
@@ -17,10 +18,13 @@ function initProgram() {
     console.log("Running init scripts.");
     firebaseInit();
     postgresInit();
+    let testData = getFirebaseData("main", "userRoles");
+    console.log(testData);
 }
 
 try {
     initProgram();
+
 } catch(e) {
     console.log("Error detected:" + e);
 };
