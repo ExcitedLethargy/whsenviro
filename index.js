@@ -8,9 +8,9 @@ console.log("Package imports complete.");
 
 //Module Imports
 console.log("Beginning JavaScript file imports...");
-import {firebaseInit} from './lib/firebase/firebaseInit.js';
-import {postgresInit} from './lib/postgres/postgresInit.js';
-import {getFirebaseData} from './lib/firebase/firebaseDataTransfer.js'
+const {firebaseInit} = require('./lib/firebase/firebaseInit');
+const {postgresInit} = require('./lib/postgres/postgresInit');
+const {getFirebaseData} = require('./lib/firebase/firebaseDataTransfer')
 console.log("File imports complete.");
 
 //Init
@@ -18,7 +18,7 @@ function initProgram() {
     console.log("Running init scripts.");
     firebaseInit();
     postgresInit();
-    let testData = getFirebaseData("main", "userRoles");
+    let testData = getFirebaseData('test/MathsUC');
     console.log(testData);
 }
 
