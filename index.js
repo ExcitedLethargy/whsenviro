@@ -20,7 +20,7 @@ async function initProgram() {
     postgresInit();
     let testData = await getFirebaseData('test/MathsUC');
     testData.topic5 = 'differentialEquations';
-    writeToFirebase('test/MathsUC', testData);
+    writeToFirebase('test/MathsUC', {changeCompleted: 'yes'});
 }
 
 try {
