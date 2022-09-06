@@ -10,7 +10,7 @@ console.log("Package imports complete.");
 console.log("Beginning JavaScript file imports...");
 const {firebaseInit} = require('./lib/firebase/firebaseInit');
 const {postgresInit} = require('./lib/postgres/postgresInit');
-const {getFirebaseData, writeToFirebase} = require('./lib/firebase/firebaseDataTransfer');
+const {getDataFromCollection, writeToFirebase} = require('./lib/firebase/firebaseDataTransfer');
 console.log("File imports complete.");
 
 //Init
@@ -18,7 +18,7 @@ async function initProgram() {
     console.log("Running init scripts.");
     firebaseInit();
     postgresInit();
-    let testData = await getFirebaseData('test/MathsUC');
+    let testData = await getDataFromCollection('main/pageData/homePage');
 }
 
 try {
