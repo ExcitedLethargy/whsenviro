@@ -9,13 +9,13 @@
         <link rel="stylesheet" href="./public/css/stylesheet.css">
         <title>Home | WHS Enviro Club Audit</title>
         <link rel="icon" type="image/x-icon" 
-        href="./public/assets/img/tree_fern_placeholder_icon.png">
-        <h1 id="eMainHeader">WHS Enviro Databasing!</h1>
+            href="./public/assets/img/tree_fern_placeholder_icon.png">
         <script src='./vendors/jquery/jquery-3.6.0.min.js'></script>
     </head>
     <body>
         <script src='./index.js'></script>
         <script src='./lib/frontend/sidenavControls.js'></script>
+        <h1 id="eMainHeader">WHS Enviro Databasing!</h1>
         <div id="eSidenav" class="sidenav">
             <h1><b>Menu</b></h1>
             <a href="./index.html">Home</a>
@@ -24,7 +24,25 @@
             <a href="./public/html/powerBills.html">Power Bills</a>
             <a href="./public/html/toDoItems.html">To Do Items</a>
         </div>
-        <div id="eSidenavOpener" class="sidenav__opener" onmouseenter="toggleSidenav()">
+        <div id="eSidenavOpener" class="sidenav__opener" onclick="toggleSidenav()">
         </div>
+        <p id="eHomeFirstParagraph" class="homePageBodyElement">
+            Welcome to the Whakatane High School Enviro Club's website for energy audits! <br>
+            <br>
+            This site was developed to assist the Enviro Club with their energy audits. Every year,
+            huge spreadsheets are used to record each audit, requiring countless hours of work
+            from a number of people. This site intends to rationalise that process by making
+            everything electronic and automatic, so that far less people need to be 'data monkeys'
+            to allow the audits to take place. <br>
+            <br>
+            To find the other pages in the site, click on the left-hand side of this page to 
+            open the menu - click anywhere else to exit it. Alternatively, click
+            <a class="boldTextLink" onclick="toggleSidenav()">here</a>.<br>
+            <br>
+            For WHS Enviro Club members,
+            <a class="boldTextLink" onclick="activateLogin()">sign in here</a>,
+            or alternatively do so with the
+            <a class="boldTextLink" onclick="toggleSidenav()">menu</a>.
+        </p>
     </body>
 </html>

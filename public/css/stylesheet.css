@@ -1,5 +1,18 @@
 /*Default stylesheet for the WHSEnviro website.*/
 
+
+/*-------------------------------------------------------------------------------------------*/
+/*GENERAL STYLING*/
+/*Bold text for links*/
+.boldTextLink {
+    font-weight: bold;
+    color: #0a8919;
+}
+
+.boldTextLink:hover {
+    cursor: grab;
+}
+
 /*-------------------------------------------------------------------------------------------*/
 /*HOME PAGE STYLING*/
 /*Main header*/
@@ -7,7 +20,22 @@
     text-align: center;
     font-family: Arial;
     font-size: 40px;
+    color: white;
+    background-image: url('../assets/img/forest_backgroundimage.jpg');
+    background-color: #ccc;
+    background-size: 100%;
+    padding-top: 0;
 }
+
+/*General styling for the body elements in the page*/
+.homePageBodyElement {
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family: arial;
+    font-size: large;
+    text-align: justify;
+}
+
 
 /*-------------------------------------------------------------------------------------------*/
 /*SIDENAV*/
@@ -63,9 +91,11 @@
     z-index: 2;
 }
 
-/*.sidenav__opener:hover {
-    width: 10%;
-}*/
+.sidenav__opener:hover {
+    opacity: 0.75;
+    transition: 0.1s;
+    cursor: grab;
+}
 
 /*Styling button to close the sidenav*/
 .sidenav .closeSidenavButton {
