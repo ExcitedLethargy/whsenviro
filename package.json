@@ -18,9 +18,13 @@
   },
   "homepage": "https://github.com/ExcitedLethargy/whsenviro#readme",
   "dependencies": {
+    "browserify": "^17.0.0",
     "firebase": "^9.8.4",
     "firebase-admin": "^11.0.1",
     "node-postgres": "^0.6.2",
     "pg": "^8.8.0"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
