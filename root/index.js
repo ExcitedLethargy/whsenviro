@@ -21,6 +21,8 @@ const vRouter = express.Router();
 const vServerPort = 5000;
 //Allow other files to be accessed by the Express server
 vApp.use(express.static(path.join(__dirname, 'public')));
+vApp.use(express.static(path.join(__dirname, 'vendors/jquery')));
+vApp.use(express.static(path.join(__dirname, 'lib')));
 console.log("Static directories set.");
 //Route initial connection
 vRouter.get('/', function(req, res) {
