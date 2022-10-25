@@ -2,9 +2,24 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="title" content="About">
+        <meta name="title" content="WHS Enviro Club">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About - WHS Enviro Club Audit</title>
-        <h1>About page!</h1>
+        <link rel="stylesheet" href="/css/stylesheet.css">
+        <title>About | WHS Enviro Club Audit</title>
+        <link rel="icon" type="image/x-icon" 
+            href="/assets/img/tree_fern_placeholder_icon.png">
+        <script src='/jquery-3.6.0.min.js'></script>
     </head>
+    <body>
+        <script src="/frontend/sidenavControls.js"></script>
+        <script src="/frontend/loadPageElements.js"></script>
+        <h1 id="eMainHeader">About Us</h1>
+        <div id="eSidenav" class="sidenav">
+            <h1>Menu</h1>
+            <a href="/">Home</a>
+            <a href="/html/pages/powerBills.html">Power Usage</a>
+        </div>
+        <div id="eSidenavOpener" class="sidenav__opener" onclick="toggleSidenav()">
+        </div>
+    </body>
 </html>
