@@ -12,7 +12,6 @@ console.log("Package imports complete.");
 console.log("Beginning JavaScript file imports...");
 const {firebaseInit} = require('./lib/firebase/firebaseInit');
 const {postgresInit} = require('./lib/postgres/postgresInit');
-const {sheetsInit} = require('./lib/sheets/googleSheetsInit');
 console.log("File imports complete.");
 
 //Node (Express) server init
@@ -40,7 +39,6 @@ async function initProgram() {
     console.log("Running program init scripts.");
     firebaseInit();
     postgresInit();
-    sheetsInit();
 }
 
 //Go
